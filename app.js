@@ -4,15 +4,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-const { Pool, Client } = require('pg');
+const pool = require('./connection');
 
-const pool = new Pool ({
-  user : 'yudhistira',
-  database : 'sds_system',
-  password : 'Mydatabase',
-  host : 'localhost',
-  port : 5432
-});
+// const pool = new Pool ({
+//   user : 'yudhistira',
+//   database : 'sds_system',
+//   password : 'Mydatabase',
+//   host : 'localhost',
+//   port : 5432
+// });
 
 // Test Conect to Db
 
