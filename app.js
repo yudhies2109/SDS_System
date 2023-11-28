@@ -4,8 +4,26 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const { Pool } = require('pg');
+ 
+const pool = new Pool({
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASS,
+  port: process.env.DB_PORT,
+})
+
+pool.connect(err => {
+  if (err) {
+      console.log(err.message)
+  } else {
+      console.log('connected nih')
+  }
+})
+
+var indexRouter = require('./routes/index')(pool);
+var usersRouter = require('./routes/users')(pool);
 
 var app = express();
 
@@ -18,6 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
