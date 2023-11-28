@@ -3,22 +3,34 @@ var router = express.Router();
 
 module.exports = function (db) {
   router.get('/', function (req, res, next) {
-    res.render('home/view', { title: 'Express' });
+    res.render('home/view', {
+      current: 'home'
+    });
   });
 
   router.get('/about', function (req, res, next) {
-    res.render('about/view', { title: 'Express' });
+    res.render('about/view', {
+      current: 'about'
+    });
   });
 
+  router.get('/services', function (req, res, next) {
+    res.render('services/view', {
+      current: 'services'
+    });
+  });
 
   router.get('/career', function (req, res, next) {
-    res.render('career/view', { title: 'Express' });
+    res.render('career/view', {
+      current: 'career'
+    });
   });
 
   router.get('/contact', function (req, res, next) {
-    res.render('contact/view', { title: 'Express' });
+    res.render('contact/view', {
+      current: 'contact'
+    });
   });
-
 
   return router;
 }

@@ -1,165 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style-about.css">
-    <!-- <script src="javascripts/header.js"></script> -->
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar" id="navbar">
-            <script src="javascripts/header.js"></script>
-            <div class="container nav-wrapper">
-                <div class="logo-wrapper">
-                    <a href="#" class="logo-image"><img src="images/logo.png" alt="SDS_Logo"></a>
-                    <a href="#" class="logo-text">PT SARANA DWI SEJAHTERA</a>
-                </div>
-                <div class="menu-wrapper">
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link"> Home </a></li>
-                        <li class="menu-item actived"><a href="#" class="menu-link active"> About </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> Our Service </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> Contact </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> Career </a></li>
-                    </ul>
-                    <a href="#" class="btn-user"> LOGIN </a>
-                </div>
-            </div>
-        </nav>
+<%- include('../partials/header') %>
+<style>
+    .header {
+        background-image: url('../images/about_frame.png');
+    }
+</style>
+<%- include('../partials/endheader') %>
+<%- include('../partials/menu') %>
 
-        <!-- HEADER ABOUT -->
-        <section class="header" id="header">
-            <div class="container header-container">
-                <div class="heading">
-                    <p class="header-heading">OUR COMPANY</p>
-                    <p class="header-subheading">Get Closer With US</p>
-                </div>
-            </div>
-        </section>
+<!-- HEADER ABOUT -->
+<section class="header" id="header">
+    <div class="container header-container">
+        <div class="heading">
+            <p class="header-heading">OUR COMPANY</p>
+            <p class="header-subheading">Get Closer With US</p>
+        </div>
+    </div>
+</section>
 
-        <!-- CONTENT ABOUT -->
-        <section class="about-sds" id="about-sds">
-            <div class="container header-about">
-                <div class="about-left"> 
-                    <img class="about-image" src="images/about-image.png" alt="about-image">
+<!-- CONTENT ABOUT -->
+<section class="about-sds" id="about-sds">
+    <div class="container header-about">
+        <div class="about-left">
+            <img class="about-image" src="images/about-image.png" alt="about-image">
+        </div>
+        <div class="about-right">
+            <div class="history-heading">
+                <p class="history-head">PT Sarana Dwi Sejahtera,</p>
+                <p class="histori-text">PT Sarana Dwi Sejahtera Based on Notary Deed of Establishment
+                    Elly Rustam, SH No. 017 on November 17, 2009 as well has
+                    obtained approval from the minister of Justice and Human
+                    Rights of the Republic of Indonesia Number: AHU-10011.AH.01.02
+                    Year 2010. Dated 24 February 2010
+                </p>
+                <p class="histori-text">
+                    Based on the legal basis and reality that the existing human
+                    resources are still needed increased to support economic growth,
+                    then based on these problems PT Sarana Dwi Sejahtera willing
+                    to participate in supporting development economic growth,
+                    where it is realized in the form of establishing a company called
+                    PT Sarana Dwi Sejahtera engaged in management consulting.
+                </p>
+            </div>
+            <div class="purpose-sds" id="purpose-sds">
+                <div class="heading-purpose">
+                    <p class="heading-text" id="heading-text">Purpose & Objectives</p>
                 </div>
-                <div class="about-right"> 
-                    <div class="history-heading">
-                        <p class="history-head">PT Sarana Dwi Sejahtera,</p>
-                        <p class="histori-text">PT Sarana Dwi Sejahtera Based on Notary Deed of Establishment
-                            Elly Rustam, SH No. 017 on November 17, 2009 as well has 
-                            obtained approval from the minister of Justice and Human 
-                            Rights of the Republic of Indonesia Number: AHU-10011.AH.01.02 
-                            Year 2010. Dated 24 February 2010
-                        </p>
-                        <p class="histori-text">
-                            Based on the legal basis and reality that the existing human
-                            resources are still needed increased to support economic growth,
-                            then based on these problems PT Sarana Dwi Sejahtera willing
-                            to participate in supporting development economic growth,
-                            where it is realized in the form of establishing a company called
-                            PT Sarana Dwi Sejahtera engaged in management consulting.
-                        </p>
-                    </div>
-                    <div class="purpose-sds" id="purpose-sds">
-                        <div class="heading-purpose">
-                            <p class="heading-text" id="heading-text">Purpose & Objectives</p>
-                        </div>
-                        <div class="icon-purpose" onclick="rotateImage()">
-                            <img id="rotatingImage" src="images/about_arrow_up.png" alt="arrow-down">
-                        </div>
-                    </div>
-                    <div class="text-purpose">
-                        <p class="sds-purpose" id="text-purpose">
-                            Provide other options for users of the services offered PT Sarana 
-                            Dwi Sejahtera is expected to provide better convenience and 
-                            comfort for service users.
-                        </p>
-                    </div>
-                    <div class="moto-sds" id="moto-sds">
-                        <div class="heading-moto">
-                            <p class="moto-mainheading" id="moto-mainheading">Motto</p>
-                        </div>
-                        <div class="icon-moto" onclick="rotateImg()">
-                            <img id="rotatingImg" src="images/about_arrow_up.png" alt="arrow-down">
-                        </div>
-                    </div>
-                    <div class="text-moto">
-                        <p class="sds-moto" id="sds-moto">Provide other options for users of the services offered PT Sarana 
-                            Dwi Sejahtera is expected to provide better convenience and 
-                            comfort for service users.
-                        </p>
-                    </div>
+                <div class="icon-purpose" onclick="rotateImage()">
+                    <img id="rotatingImage" src="images/about_arrow_up.png" alt="arrow-down">
                 </div>
             </div>
-        </section>
+            <div class="text-purpose">
+                <p class="sds-purpose" id="text-purpose">
+                    Provide other options for users of the services offered PT Sarana
+                    Dwi Sejahtera is expected to provide better convenience and
+                    comfort for service users.
+                </p>
+            </div>
+            <div class="moto-sds" id="moto-sds">
+                <div class="heading-moto">
+                    <p class="moto-mainheading" id="moto-mainheading">Motto</p>
+                </div>
+                <div class="icon-moto" onclick="rotateImg()">
+                    <img id="rotatingImg" src="images/about_arrow_up.png" alt="arrow-down">
+                </div>
+            </div>
+            <div class="text-moto">
+                <p class="sds-moto" id="sds-moto">Provide other options for users of the services offered PT Sarana
+                    Dwi Sejahtera is expected to provide better convenience and
+                    comfort for service users.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Principle Working -->
-        <section class="principle" id="principle">
-            <div class="container header-container">
-                <div class="principle-heading">
-                    <p class="principle-tittle">Our <span>Principle</span> Working</p>
-                    <p class="principle-desc">We Provide Client with the best Professional Management Services</p>
-                </div>
-                <div class="principle-value">
-                    INI VALUE WORKING SDS
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <Footer class="fotter-content" id="footer-content">
-            <div class="container footer-wrapper">
-                <div class="footer-menu">
-                    <div class="content-left">
-                        <div class="content-left-image">
-                            <img class="footer-logo-image" src="images/logo.png" alt="logo-icon">
-                        </div>
-                        <div class="content-left-Text">
-                            <p class="footer-heading">PT SARANA DWI SEJAHTERA</p>
-                            <p class="footer-text">
-                            Was Build and developed by young 
-                            professionals who are experienced 
-                            in the field of Management
-                            </p>
-                            <p class="footer-subheading">Working Hours/days</p>
-                            <p class="footer-text">Monday - Friday (08.00 - 09.00 WIB)</p>
-                        </div>
-                        <div class="content-left-social">
-                            <img class="footer-facebook-image" src="images/Facebook.png" alt="facebook-icon">
-                            <img class="footer-facebook-image" src="images/Instagram.png" alt="instagram-icon">
-                            <img class="footer-facebook-image" src="images/TwitterX.png" alt="twitterx-icon">
-                            <img class="footer-facebook-image" src="images/LinkedIn.png" alt="linkedin-icon">    
-                        </div>
-                    </div>
-                    <div class="content-middle">
-                        <p class="footer-subheading">Contact</p>
-                        <p class="footer-text">Jl. Shangrila Raya No.48A, RT.6/RW.3, 
-                            Petukangan Sel., Kec. Pesanggrahan, 
-                            Kota Jakarta Selatan, Daerah 
-                            Khusus Ibukota Jakarta 12270</p>
-                        <p class="footer-subheading">Call Us Directly</p>
-                        <p class="footer-text">021 - 22733343</p>
-                        <p class="footer-subheading">Email Us Directly</p>
-                        <p class="footer-text">info@dwisejahtera.com</p>
-                    </div>
-                    <div class="content-right">
-                        <p class="footer-subheading">Service</p>
-                        <p class="footer-text-service">Finance</p>
-                        <p class="footer-text-service">Accounting</p>
-                        <p class="footer-text-service">Tax</p>
-                        <p class="footer-text-service">Feseability</p>
-                        <p class="footer-text-service">Man Power</p>
-                    </div>
-                </div>
-                <div class="Copyright-footer">
-                    @Sarana Dwi Sejahtera 2023. All Rights Reserved.
-                </div>
-            </div>
-            <img class="wa-image" src="images/wa_logo.png" alt="logo-icon">
-        </Footer>
-    </header>
-</body>
-</html>
+<!-- Principle Working -->
+<section class="principle" id="principle">
+    <div class="container header-container">
+        <div class="principle-heading">
+            <p class="principle-tittle">Our <span>Principle</span> Working</p>
+            <p class="principle-desc">We Provide Client with the best Professional Management Services</p>
+        </div>
+        <div class="principle-value">
+            INI VALUE WORKING SDS
+        </div>
+    </div>
+</section>
+<%- include('../partials/footer') %>
+<script src="/javascripts/header.js"></script>
+<script src="/javascripts/expand.js"></script>
+<%- include('../partials/end') %>

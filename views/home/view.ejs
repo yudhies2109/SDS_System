@@ -1,187 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <title>PT. Sarana Dwi Sejahtera</title>
-</head>
-<body>  
-    <header>
-        <nav class="navbar" id="navbar">
-            <div class="container nav-wrapper">
-                <div class="logo-wrapper">
-                    <a href="#" class="logo-image"><img src="images/logo.png" alt="SDS_Logo"></a>
-                    <a href="#" class="logo-text">PT SARANA DWI SEJAHTERA</a>
-                </div>
-                <div class="menu-wrapper">
-                    <ul class="menu">
-                        <li class="menu-item actived"><a href="#" class="menu-link active"> Home </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> About </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> Our Service </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> Contact </a></li>
-                        <li class="menu-item"><a href="#" class="menu-link"> Career </a></li>
-                    </ul>
-                    <a href="#" class="btn-user"> LOGIN </a>
-                </div>
+<%- include('../partials/header') %>
+<%- include('../partials/endheader') %>
+<%- include('../partials/menu') %>
+<section class="home" id="home">
+    <img class="image-cover" src="images/background_section1_1.png" alt="image_cover">
+    <div class="container flex-container">
+        <div class="flex-item item1">
+            <img class="image-middle1" src="images/women_cover.png" alt="woman_images">
+        </div>
+        <div class="flex-item item2">
+            <div class="bubble"></div>
+            <div class="title-box">
+                <p class="paragraph-one">
+                    THE BEST <span class="orange-text">MANGEMENT</span> <span class="white-text">CONSULTING</span>
+                    FOR YOUR BUSINESS...
+                </p>
+                <p class="paragraph-two">
+                    Lorem ipsum dolor sit amet consectetur. Consequat in tortor
+                    convallis etiam risus. Amet habitasse neque est at lacus mi fermentum.
+                </p>
+                <a href="#" class="btn-contact"> LET'S TALK </a>
             </div>
-        </nav>
-        <section class="home" id="home">
-            <img class="image-cover" src="images/background_section1_1.png" alt="image_cover">
-                <div class="container flex-container">
-                    <div class="flex-item item1">
-                        <img class="image-middle1" src="images/women_cover.png" alt="woman_images">
-                    </div>
-                    <div class="flex-item item2">
-                        <div class="bubble"></div>
-                        <div class="title-box">
-                            <p class="paragraph-one">
-                                THE BEST <span class="orange-text">MANGEMENT</span> <span class="white-text">CONSULTING</span> 
-                                FOR YOUR BUSINESS...
-                            </p>
-                            <p class="paragraph-two">
-                                Lorem ipsum dolor sit amet consectetur. Consequat in tortor 
-                                convallis etiam risus. Amet habitasse neque est at lacus mi fermentum.
-                            </p>
-                            <a href="#" class="btn-contact"> LET'S TALK </a>
-                        </div>
-                    </div>
-                    <div class="flex-item item3">
-                        <img class="image-middle3" src="images/man-cover.png" alt="man_images">
-                    </div>
-                </div>
-        </section>
+        </div>
+        <div class="flex-item item3">
+            <img class="image-middle3" src="images/man-cover.png" alt="man_images">
+        </div>
+    </div>
+</section>
 
-        <!-- Services start -->
+<!-- Services start -->
 
-        <section class="service" id="service">
-                <div class="container service-container">
-                    <div class="title-services">
-                        HOW <span>OUR SERVICE</span> WORKS ??
-                    </div>
-                    <div class="service-one">
-                        <div class="box">
-                            <img class="service-image" src="images/Tax-white.png" alt="tax-icon">
-                            <p class="service-paragraph1">Tax</p>
-                            <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
-                            <p class="service-paragraph3">Learn More...</p>
-                        </div>
-                        <div class="box">
-                            <img class="service-image" src="images/User_Account.png" alt="tax-icon">
-                            <p class="service-paragraph1">Man Power</p>
-                            <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
-                            <p class="service-paragraph3">Learn More...</p>
-                        </div>
-                        <div class="box">
-                            <img class="service-image" src="images/Check-Dollar.png" alt="tax-icon">
-                            <p class="service-paragraph1">Finance</p>
-                            <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
-                            <p class="service-paragraph3">Learn More...</p>
-                        </div>
-                    </div>
-                    <div class="service-two">
-                        <div class="box">
-                            <img class="service-image" src="images/Total-Sales.png" alt="tax-icon">
-                            <p class="service-paragraph1">Accounting</p>
-                            <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
-                            <p class="service-paragraph3">Learn More...</p>
-                        </div>
-                        <div class="box">
-                            <img class="service-image" src="images/Scales.png" alt="tax-icon">
-                            <p class="service-paragraph1">Feseability</p>
-                            <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
-                            <p class="service-paragraph3">Learn More...</p>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!-- SERVICE experience -->
-        <section class="experience" id="experience">
-            <div class="container experience-container">
-                <!-- Kolom Pertama -->
-                <div class="column1">
-                    <p class="experience-paragraph1">The Hundred of Completed Works <span>Still Counting</span> in Any Industries</p>
-                    <p class="experience-paragraph2">Lorem ipsum dolor sit amet consectetur. Pellentesque orci nulla 
-                    etiam morbi urna vitae donec tempor id. Consequat in varius 
-                    aliquam tristique porta pretium mauris nunc.</p>
-                </div>
-                <!-- Kolom Kedua -->
-                <div class="column2">
-                    <img class="experience-image" src="images/experience.png" alt="tax-icon">
-                </div>
+<section class="service" id="service">
+    <div class="container service-container">
+        <div class="title-services">
+            HOW <span>OUR SERVICE</span> WORKS ??
+        </div>
+        <div class="service-one">
+            <div class="box">
+                <img class="service-image" src="images/Tax-white.png" alt="tax-icon">
+                <p class="service-paragraph1">Tax</p>
+                <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
+                <p class="service-paragraph3">Learn More...</p>
             </div>
-        </section>
-
-        <!-- BANNER HOME -->
-        <section class="banner-home" id="banner-home">
-            <div class="container banner-container">
-                <div class="banner-content">
-                    <p class="banner-title">Contact US <span>to Secure</span> your Management Services Needs</p>
-                    <p class="banner-text">Let’s collaborate and make an impact with our approach to manages.</p>
-                </div>
-                <div lass="banner-button">
-                    <a href="#" class="btn-banner"> LET’S WORK TOGETHER </a>
-                </div>
+            <div class="box">
+                <img class="service-image" src="images/User_Account.png" alt="tax-icon">
+                <p class="service-paragraph1">Man Power</p>
+                <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
+                <p class="service-paragraph3">Learn More...</p>
             </div>
-        </section>
-
-        <!-- FOOTER SECTION -->
-        <Footer class="fotter-content" id="footer-content">
-            <div class="container footer-wrapper">
-                <div class="footer-menu">
-                    <div class="content-left">
-                        <div class="content-left-image">
-                            <img class="footer-logo-image" src="images/logo.png" alt="logo-icon">
-                        </div>
-                        <div class="content-left-Text">
-                            <p class="footer-heading">PT SARANA DWI SEJAHTERA</p>
-                            <p class="footer-text">
-                            Was Build and developed by young 
-                            professionals who are experienced 
-                            in the field of Management
-                            </p>
-                            <p class="footer-subheading">Working Hours/days</p>
-                            <p class="footer-text">Monday - Friday (08.00 - 09.00 WIB)</p>
-                        </div>
-                        <div class="content-left-social">
-                            <img class="footer-facebook-image" src="images/Facebook.png" alt="facebook-icon">
-                            <img class="footer-facebook-image" src="images/Instagram.png" alt="instagram-icon">
-                            <img class="footer-facebook-image" src="images/TwitterX.png" alt="twitterx-icon">
-                            <img class="footer-facebook-image" src="images/LinkedIn.png" alt="linkedin-icon">    
-                        </div>
-                    </div>
-                    <div class="content-middle">
-                        <p class="footer-subheading">Contact</p>
-                        <p class="footer-text">Jl. Shangrila Raya No.48A, RT.6/RW.3, 
-                            Petukangan Sel., Kec. Pesanggrahan, 
-                            Kota Jakarta Selatan, Daerah 
-                            Khusus Ibukota Jakarta 12270</p>
-                        <p class="footer-subheading">Call Us Directly</p>
-                        <p class="footer-text">021 - 22733343</p>
-                        <p class="footer-subheading">Email Us Directly</p>
-                        <p class="footer-text">info@dwisejahtera.com</p>
-                    </div>
-                    <div class="content-right">
-                        <p class="footer-subheading">Service</p>
-                        <p class="footer-text-service">Finance</p>
-                        <p class="footer-text-service">Accounting</p>
-                        <p class="footer-text-service">Tax</p>
-                        <p class="footer-text-service">Feseability</p>
-                        <p class="footer-text-service">Man Power</p>
-                    </div>
-                </div>
-                <div class="Copyright-footer">
-                    @Sarana Dwi Sejahtera 2023. All Rights Reserved.
-                </div>
+            <div class="box">
+                <img class="service-image" src="images/Check-Dollar.png" alt="tax-icon">
+                <p class="service-paragraph1">Finance</p>
+                <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
+                <p class="service-paragraph3">Learn More...</p>
             </div>
-            <img class="wa-image" src="images/wa_logo.png" alt="logo-icon">
-        </Footer>
-    </header>
-</body>
-</html>
+        </div>
+        <div class="service-two">
+            <div class="box">
+                <img class="service-image" src="images/Total-Sales.png" alt="tax-icon">
+                <p class="service-paragraph1">Accounting</p>
+                <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
+                <p class="service-paragraph3">Learn More...</p>
+            </div>
+            <div class="box">
+                <img class="service-image" src="images/Scales.png" alt="tax-icon">
+                <p class="service-paragraph1">Feseability</p>
+                <p class="service-paragraph2">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="arrow-image" src="images/Arrow-services.png" alt="Deskripsi Gambar">
+                <p class="service-paragraph3">Learn More...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE experience -->
+<section class="experience" id="experience">
+    <div class="container experience-container">
+        <!-- Kolom Pertama -->
+        <div class="column1">
+            <p class="experience-paragraph1">The Hundred of Completed Works <span>Still Counting</span> in Any
+                Industries</p>
+            <p class="experience-paragraph2">Lorem ipsum dolor sit amet consectetur. Pellentesque orci nulla
+                etiam morbi urna vitae donec tempor id. Consequat in varius
+                aliquam tristique porta pretium mauris nunc.</p>
+        </div>
+        <!-- Kolom Kedua -->
+        <div class="column2">
+            <img class="experience-image" src="images/experience.png" alt="tax-icon">
+        </div>
+    </div>
+</section>
+
+<!-- BANNER HOME -->
+<section class="banner-home" id="banner-home">
+    <div class="container banner-container">
+        <div class="banner-content">
+            <p class="banner-title">Contact US <span>to Secure</span> your Management Services Needs</p>
+            <p class="banner-text">Let’s collaborate and make an impact with our approach to manages.</p>
+        </div>
+        <div lass="banner-button">
+            <a href="#" class="btn-banner"> LET’S WORK TOGETHER </a>
+        </div>
+    </div>
+</section>
+<%- include('../partials/footer') %>
+<%- include('../partials/end') %>

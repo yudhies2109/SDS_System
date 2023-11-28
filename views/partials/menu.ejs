@@ -1,0 +1,18 @@
+<nav class="navbar" id="navbar">
+    <div class="container nav-wrapper">
+        <div class="logo-wrapper">
+            <a href="#" class="logo-image"><img src="images/logo.png" alt="SDS_Logo"></a>
+            <a href="#" class="logo-text">PT SARANA DWI SEJAHTERA</a>
+        </div>
+        <div class="menu-wrapper">
+            <ul class="menu">
+                <li class="menu-item<%= current == 'home' ? ' actived' : '' %>"><a href="/" class="menu-link<%= current == 'home' ? ' active' : '' %>"> Home </a></li>
+                <li class="menu-item<%= current == 'about' ? ' actived' : '' %>"><a href="/about" class="menu-link<%= current == 'about' ? ' active' : '' %>"> About </a></li>
+                <li class="menu-item<%= current == 'services' ? ' actived' : '' %>"><a href="/services" class="menu-link<%= current == 'services' ? ' active' : '' %>"> Our Service </a></li>
+                <li class="menu-item<%= current == 'contact' ? ' actived' : '' %>"><a href="/contact" class="menu-link<%= current == 'contact' ? ' active' : '' %>"> Contact </a></li>
+                <li class="menu-item<%= current == 'career' ? ' actived' : '' %>"><a href="/career" class="menu-link<%= current == 'career' ? ' active' : '' %>"> Career </a></li>
+            </ul>
+            <a href="#" class="btn-user"> LOGIN </a>
+        </div>
+    </div>
+</nav>
