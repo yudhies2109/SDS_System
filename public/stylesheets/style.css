@@ -787,7 +787,6 @@ li.actived {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .header-about .about-left {
@@ -1104,6 +1103,189 @@ li.actived {
 
 /* END ABOUT */
 
+/* START SERVICE */
+
+.header-consulting {
+  height:1060px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.header-consulting .consulting-wrapper {
+  height: 1060px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* SECTION CONSULTING SERVICE */
+
+.heading-consulting .consulting-text1 {
+  color: #201F1F;
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 84px;
+  padding-bottom: 31px;
+}
+
+.heading-consulting .consulting-text1 span {
+  color:var(--main-color);
+}
+
+.heading-consulting .consulting-text2 {
+  color: #201F1F;
+  text-align: center;
+  font-family: var(--second-font);
+  font-size: 16px;
+  font-weight: 400;
+  width: 612px;
+  margin: auto;
+}
+
+.consulting-wrapper .detail-service-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.detail-service-one .service-consulting{
+  width: 422px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  gap:28px;
+}
+
+.detail-service-one .service-detail .services-heading {
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-bottom: 9px;
+}
+
+.detail-service-one .service-detail .services-desc {
+  color: #000;
+  font-family: var(--second-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+
+/* management Expert Said */
+.header-expert {
+  height: 326px;
+  background-color: #423F3F;
+  box-sizing: border-box;
+}
+
+
+.header-expert  .expert-wrapper {
+  /* background-color: red; */
+  height: 326px;
+  width:1535px;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.expert-wrapper .expert-left {
+  /* background-color: yellowgreen; */
+  height: 326px;
+  width: 330px;
+}
+
+.expert-left .expert-heading {
+  color: #E79231;
+  font-family: Kanit;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.expert-left .expert-heading span {
+  color: #FFFCFC;
+}
+
+.expert-left .expert-subheading {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.expert-left .expert-button {
+  /* width: 330px; */
+  /* background-color:pink; */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.expert-button .button-expert-left{
+  background-color: rgba(32, 31, 31, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  background-image: url('../images/expert-default-arrow-left.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.expert-button .button-expert-left:hover {
+  background-color: var(--main-color);
+  background-image: url('../images/expert-white-left.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.expert-button .button-expert-right{
+  background-color: rgba(32, 31, 31, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  background-image: url('../images/expert-default-arrow-right.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.expert-button .button-expert-right:hover {
+  background-color: var(--main-color);
+  background-image: url('../images/expert-white-right.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.expert-wrapper .expert-right {
+  background-color: yellowgreen;
+  width: 1135px;
+  height: 326px;
+}
+
+/* Expert Crsausel Part 2*/
+
+
+/* END SERVICE */
+
 /* START CONTACT */
 /* Header Contact */
 
@@ -1132,8 +1314,6 @@ li.actived {
   height: 1137px;
   box-sizing: border-box;
 }
-
-
 
 .contact-content .content-wrapper {
   height:1137px;
