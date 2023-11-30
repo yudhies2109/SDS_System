@@ -32,5 +32,10 @@ module.exports = function (db) {
     });
   });
 
+  router.get('/login', function (req, res, next) {
+    res.render('login/view', { title: 'Express' });
+  });
+
+
   return router;
 }
